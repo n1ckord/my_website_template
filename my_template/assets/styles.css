@@ -1,0 +1,283 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(17, 24, 39);
+  color: #ffffff;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 730px;
+  background-color: rgb(17, 24, 39);
+  text-align: center;
+}
+
+.profile_picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  object-fit: cover;
+  margin-bottom: 60px;
+  border: #333 4px solid;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 8px;
+  
+}
+
+.hero p {
+  font-size: 24px;
+  color: rgb(209, 213, 219);
+}
+
+/* Skills Section */
+.skills {
+  background-color: rgb(35, 45, 60);
+  padding: 125px 250px;
+}
+
+.skills h2 {
+  font-size: 28px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.skills ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.skills li {
+  background-color: rgb(58, 65, 79);
+  text-align: center;
+  border-radius: 8px;
+  padding: 30px;
+  font-size: 17px; 
+}
+
+/* Projects Section */
+.projects {
+  background-color: rgb(17, 24, 39);  
+  padding: 125px 35px;
+}
+
+.projects h2 {
+  font-size: 28px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: white;
+}
+
+/* Grid layout for projects */
+.container_projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Project card */
+.project {
+  background-color: rgb(35, 45, 60);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Image on top */
+.project_photo {
+  width: 100%;
+  height: 375px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text styling */
+.project h3 {
+  font-size: 20px;
+  margin: 15px 20px 10px;
+  color: white;
+}
+
+.project p {
+  margin: 5px 25px 15px;
+  color: #ccc;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* "View Project" link */
+.project a {
+  color: #4A8CFF;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 20px 20px;
+  display: inline-block;
+}
+
+.project a:hover {
+  text-decoration: underline;
+  color: rgb(147, 197, 253);
+}
+
+/* Responsive behavior (1 column on small screens) */
+@media (max-width: 700px) {
+  .projects {
+    padding: 80px 20px;
+  }
+  .projects h2 {
+    font-size: 24px;
+  }
+}
+
+/* Contact Section */
+
+.divider {
+  height: 0.5px;
+  background-color: rgba(255, 255, 255, 0.1); /* subtle line */
+  border: none;
+  margin-top: -450px;
+}
+
+.contact {
+  background-color: rgb(17, 24, 39);  
+  padding: 450px 0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 28px;
+  margin-bottom: 45px;
+  margin-top: 85px;
+  color: white;
+}
+
+.message_prompt {
+  font-size: 16px;
+  color: rgb(176, 185, 199);
+  margin-bottom: 25px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.contact input,
+.contact textarea {
+  color: white;
+  width: 500px;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid rgb(55, 65, 80);
+  border-radius: 8px;
+  background-color: rgb(17, 24, 39);
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+
+.send_message {
+  width: 500px;
+  height: 40px;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 7.5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.send_message:hover {
+  background-color: #297fb9e0;
+}
+
+.resume {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 25px;
+  padding: 15px 20px;
+  background-color: rgb(17, 24, 39);
+  border-radius: 5px;
+  border: 1px solid rgb(55, 65, 80);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+.resume:hover{
+  cursor: pointer;
+  background-color: rgb(25, 32, 47);
+}
+
+.contact a {
+  color: #3498db;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.contact_p {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(156, 163, 175);
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+.icons {
+  display: flex; 
+  justify-content: center; 
+  gap: 20px; 
+  margin-top: 20px; 
+  transition: filter 0.3s ease-in-out; 
+}
+.sc_icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.sc_icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  filter: brightness(0.8);
+  transition: filter 0.3s ease-in-out;
+}
+
+.sc_icon:hover img {
+  filter: brightness(1.2);
+  transform: scale(1.1);
+}
